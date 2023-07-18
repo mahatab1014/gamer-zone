@@ -63,7 +63,7 @@
     text-transform: uppercase;
 }
 .banner-caption > h2{
-    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background: var(--linear-gradient);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -109,8 +109,9 @@
     text-align: right;
     width: 45vw;
 }
-.gamer-caption > h2{
-    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+.gamer-caption > h2,
+.online-game-title > h2 > span{
+    background: var(--linear-gradient);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -140,3 +141,76 @@
 }
 
 /* END we-are-gamer Section */
+
+#online-game div.container{
+    flex-direction: column;
+}
+
+.online-game-title{
+    text-align: center;
+    padding-top: 50px;
+}
+.online-game-title > h2{
+    color: #0B0223;
+    font-size: var(--text-3rem);
+    font-weight: 700;
+}
+.online-game-title > p{
+    color: #534C64;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.875rem; /* 166.667% */
+    padding: 15px 0;
+}
+
+.funny-games-video{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    gap: 25px;
+}
+.games-video{
+    cursor: pointer;
+}
+.games-video > p{
+    padding-top: 20px;
+    color: #534C64;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.875rem; /* 150% */
+}
+.video-thumbnail{
+    position: relative;
+}
+.video-thumbnail > .watch-now{
+    background: #0000008e;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    opacity: 0;
+    transition: 300ms;
+
+    width: 100%;
+    height: 99%;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.games-video:hover > .video-thumbnail > .watch-now{
+    opacity: 1;
+
+}
+.video-thumbnail > .watch-now > span:first-child{
+    color: #fff;
+    font-size: 2.5rem;
+}
+.video-thumbnail > .watch-now > span:last-child{
+    color: #fff;
+    font-size: 1.2rem;
+    padding-top: 10px;
+}

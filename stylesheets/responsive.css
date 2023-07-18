@@ -37,9 +37,15 @@
         text-align: center;
         margin-top: 10px;
     }
-
     .gamer-caption > h3 {
         font-size: 1.5rem;
+    }
+
+    .funny-games-video{
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+    .games-video {
+        text-align: center;
     }
 
 }
@@ -69,6 +75,9 @@
     .gamer-caption {
         text-align: center;
         width: auto;
+    }
+    .funny-games-video{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
