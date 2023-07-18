@@ -39,4 +39,5 @@ span{
     font-weight: 600;
     text-transform: uppercase;
     padding: 15px 35px;
+    display: inline-block;
 }

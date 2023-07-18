@@ -38,6 +38,9 @@
         margin-top: 10px;
     }
 
+    .gamer-caption > h3 {
+        font-size: 1.5rem;
+    }
 
 }
 
@@ -63,6 +66,10 @@
     .banner-images{
         text-align: center;
     }
+    .gamer-caption {
+        text-align: center;
+        width: auto;
+    }
 }
 
 /* Laptop Or < 1366px Display */
@@ -78,5 +85,8 @@
     }
     #header > nav.container > .nav-menu-list > li:last-child > span {
         padding: 5px 5px;
+    }
+    .gamer-caption {
+        width: 55vw;
     }
 }
