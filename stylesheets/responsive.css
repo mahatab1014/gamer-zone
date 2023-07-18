@@ -1,5 +1,43 @@
-@media screen and (max-width: 576px) {}
+/* Mobile Devices */
+@media screen and (max-width: 576px) {
+    .container{
+        padding: 10px 20px !important;
+    }
+    #header > nav.container > .logo > img{
+        width: 20%;
+    }
+    #header > nav.container > .logo > h2 {
+        font-size: 1.8125rem;
+    }
+    #header > nav.container > .nav-menu-list {
+        flex-direction: column;
+        margin-top: 15px !important;
+    }
+}
 
-@media screen and (min-width: 576px) and (max-width: 768px) {}
+/* Mobile & Medium Large Devices */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    #header > nav.container > .nav-menu-list{
+        flex-direction: column;
+    }
+}
 
-@media screen and (min-width: 0px) and (max-width: 992px) {}
+/* Tablat Devices */
+@media screen and (min-width: 0px) and (max-width: 992px) {
+    .container{
+        flex-direction: column;
+    }
+    #header > nav.container > .nav-menu-list {
+        margin-top: 15px !important;
+    }
+}
+
+/* Laptop Or < 1366px Display */
+@media screen and (min-width: 992px) and (max-width: 1100px){
+    #header > nav.container > .logo > h2 {
+        font-size: 2.1rem;
+    }
+    #header > nav.container > .nav-menu-list > li:last-child > span {
+        padding: 5px 5px;
+    }
+}
