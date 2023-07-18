@@ -1,8 +1,17 @@
 /* Mobile Devices */
 @media screen and (max-width: 576px) {
+    :root{
+        /* Font SIZE */
+        --text-3rem: 2rem;
+    }
     .container{
         padding: 10px 20px !important;
     }
+    .primary-btn {
+        padding: 14px 20px;
+    }
+
+
     #header > nav.container > .logo > img{
         width: 20%;
     }
@@ -13,6 +22,23 @@
         flex-direction: column;
         margin-top: 15px !important;
     }
+
+    .banner-caption > h3 {
+        text-align: center;
+    }
+    .banner-caption > h2 {
+        font-size: 4.5rem;
+        text-align: center;
+    }
+    .banner-caption > ul > li {
+        font-size: 1rem;
+    }
+    .banner-button{
+        text-align: center;
+        margin-top: 10px;
+    }
+
+
 }
 
 /* Mobile & Medium Large Devices */
@@ -26,14 +52,27 @@
 @media screen and (min-width: 0px) and (max-width: 992px) {
     .container{
         flex-direction: column;
+        padding: inherit 50px;
     }
     #header > nav.container > .nav-menu-list {
         margin-top: 15px !important;
+    }
+    #banner > div.container{
+        flex-direction: column-reverse;
+    }
+    .banner-images{
+        text-align: center;
     }
 }
 
 /* Laptop Or < 1366px Display */
 @media screen and (min-width: 992px) and (max-width: 1100px){
+    
+    :root{
+        /* Font SIZE */
+        --text-3rem: 2.8rem;
+    }
+
     #header > nav.container > .logo > h2 {
         font-size: 2.1rem;
     }
