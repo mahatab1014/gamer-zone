@@ -6,11 +6,13 @@
     align-items: center;
     padding: 20px 100px;
 }
-#header > nav.container > .logo{
+#header > nav.container > .logo,
+footer .logo{
     display: flex;
     align-items: center;
 }
-#header > nav.container > .logo > h2{
+#header > nav.container > .logo > h2,
+footer .logo > h2{
     padding-left: 10px;
     color: #0B0223;
     font-size: 2.8125rem;
@@ -356,4 +358,46 @@
     font-size: 1rem;
     font-weight: 600;
     padding-left: 10px;
+}
+/* END GAME LIST SECTION */
+
+#footer{
+    background: #0B0223;
+    padding: 80px 0;
+}
+#footer > .container{
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+#footer > .container > .logo > h2{
+    color: #fff;
+}
+#footer .footer-menu > ul,
+#footer .footer-social-icon > ul{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+#footer .footer-menu > ul > li > a,
+#footer .footer-social-icon > ul > li > a > span{
+    color: #fff;
+    font-size: 1.2rem;
+    transition: 300ms;
+}
+#footer .footer-social-icon > ul > li > a > span{
+    font-size: 2rem;
+}
+#footer .footer-menu > ul > li > a:hover,
+#footer .footer-social-icon > ul > li > a > span:hover{
+    color: #ff0000;
+    cursor: pointer;
+}
+#footer .another-footer-menu > ul > li > a,
+.copy-right p{
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 1rem;
+    font-weight: 500;
+    transition: 300ms;
 }
