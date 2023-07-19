@@ -60,6 +60,7 @@
     }
     .games-list > .game-item{
         flex: 0 0 48% !important;
+        padding: 2px !important;
     }
 
 }
@@ -81,6 +82,7 @@
     }
     .games-list > .game-item{
         flex: 0 0 31% !important;
+        padding: 3px !important;
     }
 }
 
@@ -137,6 +139,7 @@
 
     .games-list > .game-item{
         flex: 0 0 23%;
+        padding: 3px;
     }
     .games-list > .game-item > p {
         font-size: 0.8rem;
