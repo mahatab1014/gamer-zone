@@ -58,6 +58,9 @@
     .game-play-caption > h2 {
         font-size: 1.8rem !important;
     }
+    .games-list > .game-item{
+        flex: 0 0 48% !important;
+    }
 
 }
 
@@ -75,6 +78,9 @@
     #online-game-play-2nd .game-play-images-2nd > div {
         bottom: -44px !important;
         right: -38px !important;
+    }
+    .games-list > .game-item{
+        flex: 0 0 31% !important;
     }
 }
 
@@ -129,6 +135,13 @@
         right: -57px;
     }
 
+    .games-list > .game-item{
+        flex: 0 0 23%;
+    }
+    .games-list > .game-item > p {
+        font-size: 0.8rem;
+    }
+
 }
 
 /* Laptop Or < 1366px Display */
@@ -150,5 +163,8 @@
     }
     .game-play-caption > h2 {
         font-size: 2.5rem;
+    }
+    .games-list > .game-item > p {
+        font-size: 0.9rem;
     }
 }
