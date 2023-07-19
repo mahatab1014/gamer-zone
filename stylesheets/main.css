@@ -214,3 +214,59 @@
     font-size: 1.2rem;
     padding-top: 10px;
 }
+/* END FUNNY VIDEO SECTION */
+
+#online-game-play > div.container,
+#online-game-play-2nd > div.container {
+    align-items: center;
+    gap: 80px;
+}
+.game-play-caption {
+    width: 35vw;
+}
+.game-play-caption > h2 {
+    text-align: right;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.game-play-caption > p{
+    color: #534C64;
+    text-align: right;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.875rem; /* 166.667% */
+}
+.game-play-images,
+.game-play-images-2nd{
+    width: 50vw;
+    position: relative;
+    text-align: right;
+}
+.game-play-images img,
+.game-play-images-2nd img{
+    width: 80%;
+}
+.game-play-images > div {
+    width: 50%;
+    position: absolute;
+    bottom: -68px;
+    left: -38px;
+}
+
+#online-game-play-2nd{
+    padding-top: 100px;
+}
+
+.game-play-images-2nd {
+    text-align: left;
+}
+#online-game-play-2nd .game-play-caption > h2,
+#online-game-play-2nd .game-play-caption > p{
+    text-align: left;
+}
+#online-game-play-2nd .game-play-images-2nd > div {
+    width: 50%;
+    position: absolute;
+    bottom: -100px;
+    right: -85px;
+}
