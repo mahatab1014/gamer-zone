@@ -28,6 +28,7 @@ footer .logo > h2{
     color: #3C354F;
     font-size: 1.125rem;
     font-weight: 500;
+    transition: 300ms;
 }
 #header > nav.container > .nav-menu-list > li:last-child{
     border-radius: 0.5rem;
@@ -43,7 +44,13 @@ footer .logo > h2{
     font-weight: 500;
 }
 #header > nav.container > .nav-menu-list > li > span > a{
+    transition: 300ms;
     color: #000;
+}
+#header > nav.container > .nav-menu-list > li > a:hover,
+#header > nav.container > .nav-menu-list > li > span > a:hover{
+    color: #ff00ff;
+    transition: 300ms;
 }
 /* HEADER CSS END */
 #banner{
@@ -65,14 +72,17 @@ footer .logo > h2{
     text-transform: uppercase;
 }
 .banner-caption > h2{
-    background: var(--linear-gradient);
+    /* background: var(--linear-gradient);
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
 
     font-size: 5.9375rem;
     font-weight: 800;
     text-transform: uppercase;
+
+    animation: banner-text 3s linear infinite;
+
 }
 .banner-caption > ul{
     padding: 20px 0;
@@ -93,7 +103,9 @@ footer .logo > h2{
 .banner-button{
     margin-top: 30px;
 }
-
+.banner-button a:last-child{
+    background: #1614a3b9;
+}
 .banner-images{
     text-align: right;
 }
@@ -145,6 +157,7 @@ footer .logo > h2{
 /* END we-are-gamer Section */
 #online-game{
     background: var(--background-f7f9ff);
+    padding: 50px 0;
 }
 #online-game div.container{
     flex-direction: column;
@@ -152,7 +165,6 @@ footer .logo > h2{
 
 .online-game-title{
     text-align: center;
-    padding-top: 50px;
 }
 .online-game-title > h2{
     color: #0B0223;
@@ -219,7 +231,9 @@ footer .logo > h2{
     padding-top: 10px;
 }
 /* END FUNNY VIDEO SECTION */
-
+#online-game-play{
+    padding: 50px 0;
+}
 #online-game-play > div.container,
 #online-game-play-2nd > div.container {
     align-items: center;
@@ -363,12 +377,12 @@ footer .logo > h2{
 
 #footer{
     background: #0B0223;
-    padding: 80px 0;
+    padding: 50px 0 10px ;
 }
 #footer > .container{
     flex-direction: column;
     align-items: center;
-    gap: 60px;
+    gap: 30px;
 }
 #footer > .container > .logo > h2{
     color: #fff;
@@ -400,4 +414,7 @@ footer .logo > h2{
     font-size: 1rem;
     font-weight: 500;
     transition: 300ms;
+}
+.copy-right p{
+    font-size: 0.8rem;
 }
