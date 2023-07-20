@@ -1,5 +1,10 @@
-#header{
+#header {
+    background: #fff;
     box-shadow: 2px 5px 10px #0000000e;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9;
 }
 #header > nav.container{
     justify-content: space-between;
